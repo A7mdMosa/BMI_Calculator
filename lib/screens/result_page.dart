@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:bmi_calculator/constants.dart';
-import 'package:bmi_calculator/components/buttom_button.dart';
-import 'package:bmi_calculator/components/card_widget.dart';
+
+import '../constants.dart';
+import '../components/bottom_button.dart';
+import '../components/card_widget.dart';
 
 class ResultScreen extends StatelessWidget {
   ResultScreen(
@@ -57,7 +58,7 @@ class ResultScreen extends StatelessWidget {
           ),
         ),
         SizedBox(height: 50),
-        ButtomButton(
+        BottomButton(
             buttonName: 'RE_CALCULATE',
             onTap: () {
               Navigator.pop(context);

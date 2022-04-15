@@ -1,12 +1,13 @@
-import 'package:bmi_calculator/bmi_calc.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:bmi_calculator/constants.dart';
-import 'package:bmi_calculator/components/buttom_button.dart';
-import 'package:bmi_calculator/components/card_widget.dart';
-import 'package:bmi_calculator/components/column_icon.dart';
-import 'package:bmi_calculator/components/new_icon_button.dart';
-import 'package:bmi_calculator/screens/result_page.dart';
+
+import '../bmi_calc.dart';
+import '../constants.dart';
+import '../components/bottom_button.dart';
+import '../components/card_widget.dart';
+import '../components/column_icon.dart';
+import '../components/new_icon_button.dart';
+import 'result_page.dart';
 
 enum Gender { male, female }
 
@@ -104,7 +105,7 @@ class _QuizPageState extends State<InputPage> {
                     data: SliderTheme.of(context).copyWith(
                       activeTrackColor: kGreyText,
                       inactiveTrackColor: Color(0xff051009),
-                      thumbColor: kButtomContainerColor,
+                      thumbColor: kBottomContainerColor,
                       overlayColor: Color(0x40178366),
                       overlayShape: RoundSliderOverlayShape(overlayRadius: 25),
                       thumbShape: RoundSliderThumbShape(enabledThumbRadius: 15),
@@ -214,7 +215,7 @@ class _QuizPageState extends State<InputPage> {
               ),
             ]),
           ),
-          ButtomButton(
+          BottomButton(
             buttonName: 'CALCULATE',
             onTap: () {
               CalculatorBrain calc =

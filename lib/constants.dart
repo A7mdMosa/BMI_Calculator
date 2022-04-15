@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-const kButtomContainerHeight = 80.0;
-const kButtomContainerColor = Color(0xff178366);
+const kBottomContainerHeight = 80.0;
+const kBottomContainerColor = Color(0xff178366);
 
 const kActiveColor = Color(0xff095A68);
 const kInActiveColor = Color(0xff06353D);

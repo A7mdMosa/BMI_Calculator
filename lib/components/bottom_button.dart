@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:bmi_calculator/constants.dart';
 
-class ButtomButton extends StatelessWidget {
+import '../constants.dart';
+
+class BottomButton extends StatelessWidget {
   final String buttonName;
   final VoidCallback onTap;
-  ButtomButton({required this.buttonName, required this.onTap});
+  BottomButton({required this.buttonName, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +15,8 @@ class ButtomButton extends StatelessWidget {
         padding: EdgeInsets.only(bottom: 15),
         margin: EdgeInsets.only(top: 10),
         width: double.infinity,
-        height: kButtomContainerHeight,
-        color: kButtomContainerColor,
+        height: kBottomContainerHeight,
+        color: kBottomContainerColor,
         child: Center(
           child: Text(
             buttonName,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:bmi_calculator/constants.dart';
+
+import '../constants.dart';
 
 class NewIconButton extends StatelessWidget {
   final IconData iconData;
@@ -11,7 +12,7 @@ class NewIconButton extends StatelessWidget {
     return RawMaterialButton(
       onPressed: onPress,
       child: Icon(iconData, color: Colors.black87),
-      fillColor: kButtomContainerColor,
+      fillColor: kBottomContainerColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
